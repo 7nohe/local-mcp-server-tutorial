@@ -210,7 +210,7 @@ npm publish
 ```
 
 > [!NOTE]
-> npm publishの際に、package.jsonのnameを@<username>/my-mcp-serverのようにすることで、自分の作成したパッケージだと分かりやすくなります。
+> npm publishの際に、package.jsonのnameを@username/my-mcp-serverのようにすることで、自分の作成したパッケージだと分かりやすくなります。
 
 > [!WARNING]
 > npmパッケージは一度公開してしまうと削除が難しいので、慎重に公開しましょう。
