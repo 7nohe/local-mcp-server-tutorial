@@ -43,7 +43,8 @@ npm run build
 # Hello, world!
 ```
 
-> ![NOTE] package.jsonのbinプロパティに設定によりnode_modules/.bin/以下にシンボリックリンクが作成され、./dist/index.jsを実行することができます。
+> [!NOTE]
+> package.jsonのbinプロパティに設定によりnode_modules/.bin/以下にシンボリックリンクが作成され、./dist/index.jsを実行することができます。
 
 
 
@@ -179,7 +180,8 @@ npx @modelcontextprotocol/inspector ./dist/index.js
 
 http://127.0.0.1:6274 をブラウザで開くと、定義したResourcesやToolsのレスポンスを確認できます。
 
-> ![NOTE] 毎回ビルドコマンド打つのが面倒な場合は`npm run watch`を実行しておくと、変更があるたびに自動でビルドしてくれます。
+> [!NOTE]
+> 毎回ビルドコマンド打つのが面倒な場合は`npm run watch`を実行しておくと、変更があるたびに自動でビルドしてくれます。
 
 
 次にClaude Desktopで動作確認します。
@@ -207,7 +209,11 @@ npm login
 npm publish
 ```
 
-> ![NOTE] npm publishの際に、package.jsonのnameを@<username>/my-mcp-serverのようにすることで、自分の作成したパッケージだと分かりやすくなります。
+> [!NOTE]
+> npm publishの際に、package.jsonのnameを@<username>/my-mcp-serverのようにすることで、自分の作成したパッケージだと分かりやすくなります。
+
+> [!WARNING]
+> npmパッケージは一度公開してしまうと削除が難しいので、慎重に公開しましょう。
 
 ポイント:
 - package.jsonのscripts.prepublishOnlyでビルドを行うようにしておくと、npm publishの際に自動でビルドされます。
