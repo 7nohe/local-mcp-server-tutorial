@@ -1,0 +1,28 @@
+{
+  "name": "@your-name/my-mcp-server",
+  "version": "0.0.1",
+  "description": "My MCP server",
+  "keywords": [
+    "mcp"
+  ],
+  "license": "MIT",
+  "author": "<your-name>",
+  "type": "module",
+  "bin": "./dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc && chmod 755 dist/*.js",
+    "watch": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "typescript": "^5.8.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
